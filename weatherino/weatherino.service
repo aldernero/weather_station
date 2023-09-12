@@ -1,0 +1,11 @@
+[Unit]
+Description=Weatherino monitoring
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python /home/vernon/Documents/weatherino.py
+
+[Install]
+WantedBy=multi-user.target
